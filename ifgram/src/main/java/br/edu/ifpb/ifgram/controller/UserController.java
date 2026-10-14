@@ -1,4 +1,4 @@
-package Controller;
+package br.edu.ifpb.ifgram.controller;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +17,17 @@ public class UserController {
         return "chamei o endpoit como um POST!";
     }
     @DeleteMapping
-    public String deleteUser(){
+    public String deleteUser() {
         return "chamei o endpoint como um DELETE!";
     }
-}
+    @PatchMapping
+    public String patchUser(){
+        return "chamei o endpoint como um PATCH!";
+        }
+    @PutMapping
+    public String putUser(){
+        return "chamei o endpoint como um PUT!";
+    }
+
+    }
+

@@ -5,6 +5,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 public record UserRequest (
+
         @Email
         String email,
 
@@ -14,6 +15,6 @@ public record UserRequest (
 
         @Size(min=4)
         @NotNull
-        String senha
+        String senha)
 
-) {}
+ {}
